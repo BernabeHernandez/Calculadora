@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="calculator">
+        <div class="screen" id="display">0</div>
+        <div class="buttons">
+            <div class="button-row">
+                <button id="btn7" onclick="insertarNumero('7')">7</button>
+                <button id="btn8" onclick="insertarNumero('8')">8</button>
+                <button id="btn9" onclick="insertarNumero('9')">9</button>
+                <button id="btnlimpiar" onclick="limpiar()">C</button>
+            </div>
+
+            <div class="button-row">
+                <button id="btn4" onclick="insertarNumero('4')">4</button>
+                <button id="btn5" onclick="insertarNumero('5')">5</button>
+                <button id="btn6" onclick="insertarNumero('6')">6</button>
+                <button id="btnmultiplicacion" class="operator">*</button>
+            </div>
+
+            <div class="button-row">
+                <button id="btn1" onclick="insertarNumero('1')">1</button>
+                <button id="btn2" onclick="insertarNumero('2')">2</button>
+                <button id="btn3" onclick="insertarNumero('3')">3</button>
+                <button id="btnresta" class="operator">-</button>
+            </div>
+
+            <div class="button-row">
+                <button id="btn0" class="double" onclick="b12()">0</button>
+                <button id="btnpunto" onclick="Punto()">.</button>
+                <button id="btnigual" class="equal operator" onclick="realizarOperacion()">=</button>
+                <button id="btnsuma" class="operator" onclick="setOperacion('suma')">+</button>
+                <button id="btndivision" class="operator" onclick="setOperacion('division')">/</button>
+            </div>
+        </div>
+
+        <script src="calculadora.js" type="module"></script>
+        <script src="funciones.js" type="module"></script>
+    </div>
+</body>
+
+</html>
